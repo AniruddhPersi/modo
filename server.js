@@ -5,7 +5,7 @@ const dbConnection = require("./config/dbConnection")
 const bodyParser = require("body-parser")
 require('dotenv').config();
 const cors = require("cors")
-const port = process.env.PORT;
+const port = 8080;
 
 dbConnection()
 
