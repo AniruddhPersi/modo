@@ -15,6 +15,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 require("./routes/taskListRoute")(app)
+require("./routes/userRoute")(app)
 // app.get("/",(req,res)=>{
 //     res.send("welcome to modo")
 // });
