@@ -54,6 +54,7 @@ exports.createUser = async (req,res) => {
 };
 
 exports.getForm = async (req, res) => {
+    const relativePath = req.query.path
     try {
         const form = {
             "metadata": {
@@ -64,7 +65,7 @@ exports.getForm = async (req, res) => {
                     "elementType": "form",
                     "heading": "Form heading",
                     "requestMethod": "GET",
-                    "relativePath": "",
+                    "relativePath": relativePath,
                     "items": [
                         {
                             "elementType": "input",
